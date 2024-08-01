@@ -1,3 +1,38 @@
+# Explanation of the Structure
+
+## Root Directory:
+
+- **.env**: Environment variables.
+- **.gitignore**: Files and directories to ignore in version control.
+- **README.md**: Project documentation.
+- **package.json**: Project metadata and dependencies.
+- **app.js**: Main entry point of the application.
+
+## config/:
+
+- **config.js**: Configuration settings, such as API endpoints and other constants.
+
+## controllers/:
+
+- **instagramController.js**: Handles the logic for interacting with the Instagram API.
+
+## services/:
+
+- **instagramService.js**: Contains the business logic for posting to Instagram and other related operations.
+
+## utils/:
+
+- **scheduler.js**: Utility for scheduling tasks, such as posting to Instagram at specific intervals.
+
+## logs/:
+
+- **app.log**: Log files for debugging and monitoring.
+
+## tests/:
+
+- **instagramService.test.js**: Unit tests for the Instagram service.
+
+
 Summary :
 
 # Instagram-AI-Automation
@@ -95,8 +130,3 @@ The service will automatically post to Instagram daily at 10 AM.
 **4.1. Update Cron Job**
 
 - Ensure the cron job runs daily to generate and post new content.
-
-### Example Code Snippets
-
-**Generating AI Images:**
-
