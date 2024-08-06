@@ -5,6 +5,7 @@ const session = require("express-session");
 const dotenv = require('dotenv');
 const path = require('path');
 const instagramControllers = require('./controllers/instagramController');
+const openAIControllers = require('./controllers/openAIControllers');
 
 dotenv.config();
 
@@ -31,7 +32,7 @@ const init = async () => {
 
     // Routes setup
     app.use('/', instagramControllers);
-    // app.use('/cronjobs', cronJobs);
+    app.use('/openai', openAIControllers);
 
     // Start the server
     app.listen(PORT, () => {
